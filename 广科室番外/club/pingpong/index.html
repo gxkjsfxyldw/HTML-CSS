@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>乒乓球协会</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png" />
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        html {
+            overflow: -moz-scrollbars-vertical;
+            scroll-behavior: smooth;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <!-- 丝滑滚动到顶部专用 -->
+</head>
+
+<body>
+    <!-- 小飞机升顶专用 -->
+    <div id="up"
+        style="position: fixed; bottom: 20px; right: 20px; z-index: 20;transform: translateY(180px); transition:  0.5s ease-in-out;">
+        <a href="#top"><span class="glyphicon glyphicon-plane"
+                style="color:#d9000f; font-size: 50px;text-shadow:-2px 6px 8px #333;">
+            </span></a>
+    </div>
+    <!-- 小飞机升顶专用 -->
+
+    <script>
+        window.onscroll = function () {
+            ele = document.getElementById('up');
+            ele.style.transform = document.documentElement.scrollTop > 500 ? 'translateY(0px)' : 'translateY(180px)';
+        }
+    </script>
+    <!-- 小飞机升顶专用 -->
+
+    <div class="container">
+        <div class="row"
+            style="background-color: #d9000f;margin-top: 2%;margin-left: -5%; box-shadow:1px 3px 9px #067eff;">
+            <!-- <div style="opacity: 1;">
+                <video src="images/bp.mp4" controls muted loop autoplay style=" width: 100%;"></video>
+            </div> -->
+            <div style="opacity: 1;">
+                <video src="https://gxkjsfxyfw.oss-cn-guangzhou.aliyuncs.com/bp.mp4" controls muted loop autoplay
+                    style=" width: 100%;"></video>
+            </div>
+            <header class="col-md-2" style="margin-left: 4%; margin-top: 4%;">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.gif" alt="" style="border-radius: 10px;"></a>
+                </div>
+
+                <div class="nav" style="margin-top: 5%;">
+                    <ul>
+                        <li><a href="../../index.html" class="glyphicon glyphicon-plus-sign">返回首页</a></li>
+                        <li><a href="https://zhuanlan.zhihu.com/p/144338923" class="glyphicon glyphicon-flash">社团故事</a>
+                        </li>
+                        <li><a href="zhaopian.html" class="glyphicon glyphicon-eject">社团照片</a></li>
+                        <li><a href="https://baike.sogou.com/v3618631.htm?fromTitle=%E5%9B%BD%E4%B9%93"
+                                class="glyphicon glyphicon-fire">最新资讯</a></li>
+                        <li><a href="https://baike.sogou.com/v9518.htm?fromTitle=%E4%B9%92%E4%B9%93%E7%90%83"
+                                class="glyphicon glyphicon-user">关于我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="thumbnail" style="background-color: #eee; margin-top: 5%; border-radius: 10px;">
+                    <div class="caption">
+                        <span class="label label-info">Good</span>
+                        <h3>预览更多</h3>
+                        <p>我们还收录了其他社团</p>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" style="width: 100%;" type="button"
+                                id="dropdownMenu1" data-toggle="dropdown">
+                                其他社团
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"
+                                style="min-width: 100%; text-align: center;">
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../computer/index.html">滑板协会</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../rollerskating/index.html">轮滑协会</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../fishing/index.html">钓鱼协会</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../basketball/index.html">篮球协会</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../pingpong/index.html">乒乓球协会</a></li>
+
+                            </ul>
+                        </div>
+                        <script src="js/jquery.min.js"></script>
+                        <script src="js/bootstrap.min.js"></script>
+                    </div>
+                </div>
+
+                <div class="thumbnail" style="background-color: #eee; margin-top: -5%;">
+                    <a
+                        href="https://baike.sogou.com/v76439603.htm?fromTitle=%E5%A5%A5%E8%BF%90%E4%BC%9A%E4%B9%92%E4%B9%93%E7%90%83%E7%94%B7%E5%AD%90%E5%8D%95%E6%89%93">
+                        <img src="images/tb.gif" alt="#" style="max-width: 85%;min-width: 20%;"> </a>
+                    <div class="caption">
+                        <h3>Join Us</h3>
+                        <p><a href="zhaoxin.html" class="btn btn-info" role="button">加入</a>
+                            <a href=" #" class="btn btn-default" role="button">详情</a>
+                        </p>
+                    </div>
+                </div>
+            </header>
+
+            <article class="col-md-9" style="margin-top: 4%; margin-left: 1%; ">
+                <!-- 新闻区域？ -->
+                <div class="news clearfix">
+                    <ul>
+                        <li>
+                            <a
+                                href="https://www.bilibili.com/video/BV1354y1V7PS?from=search&seid=15686762512581997958&spm_id_from=333.337.0.0">
+                                <img src="images/a.jpg" alt="">
+                                <p>兵乓球也能成为艺术表演</p>
+                            </a>
+                        </li>
+                        <ul>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/a2.jpeg" alt="">
+                                        <p>双人竞技运动很激烈</p>
+                                    </a>
+                                </li>
+                                <ul>
+
+                                    <div class="row"
+                                        style="background-color: #ffffff;margin-left: -2%; margin-right: 0%;">
+                                        <div class="col-sm-5" style="margin-left: 8%;border-bottom: 2px solid white;">
+                                            <h2><a href="http://www.ctta.cn/" style="text-decoration: none;"> 国乓的最新资讯
+                                                </a><br>
+                                                <span class="label label-info">New</span>
+                                            </h2>
+                                            <p>去看看最新的技术 </p> <br />
+                                            <p class="label label-default">国乒的日常是怎样的2021/8/30</p>
+                                        </div>
+                                        <div class="col-sm-5" style="margin-left: 3%;"><img src="images/b6.gif"
+                                                class="thumbnail" alt="" style="width: 100%;"></div>
+
+                                        <div class="col-sm-5" style="margin-left: 8%;margin-right: 0%;">
+                                            <h2><a style="text-decoration: none;"
+                                                    href="https://www.bilibili.com/video/BV13D4y1o78a?from=search&seid=134969290515830944&spm_id_from=333.337.0.0">
+                                                    想学兵乓球吗？我教你啊 </a><br>
+                                                <span class="label label-info">New</span>
+                                            </h2>
+                                            <p>大师养成记 </p> <br />
+                                            <p class="label label-default">Let's go张继科教学系列2021/8/30</p>
+                                        </div>
+
+                                        <div class="col-sm-5" style="margin-left: 3%;"><img src="images/b7.gif"
+                                                class="thumbnail" alt="" style="width: 100%;"></div>
+
+                                        <div class="col-sm-5" style="margin-left: 8%;margin-right: 0%;">
+                                            <h2><a style="text-decoration: none;"
+                                                    href="https://sports.qq.com/a/20180506/013061.htm">
+                                                    关于乒乓球赛事 </a><br>
+                                                <span class="label label-info">New</span>
+                                            </h2>
+                                            <p>高手过招 </p> <br />
+                                            <p class="label label-default">看一下你喜欢的球星的比赛</p>
+                                        </div>
+
+                                        <div class="col-sm-5" style="margin-left: 3%;"><img src="images/b10.gif"
+                                                class="thumbnail" alt="" style="width: 100%;"></div>
+                                    </div>
+                </div>
+            </article>
+
+            <div class="col-sm-6" style="margin-left: 0%; margin-top: 1%;">
+                <div class="card">
+                    <img src="images/b1.gif">
+                    <div class="descriptions">
+                        <h1>横式握拍法</h1>
+                        <p>中指、无名指和小指自然地握住拍柄，拇指在球拍正面轻贴在中指的旁边，食指自然伸直斜放于球拍的背面，虎口轻微贴拍，击球时拇指和食指帮助手腕调节拍形和加力挥拍作用。正手攻球时食指向上移动，反手攻球时拇指向球拍中部移动帮助手腕下压加大击球力量。
+                        </p>
+                        <a
+                            href="https://jingyan.baidu.com/article/a65957f4bf688524e67f9b9d.html"><button>查看更多>></button></a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-sm-6" style="margin-left: 0%; margin-top: 1%;">
+                <div class="card">
+                    <img src="images/b2.gif">
+                    <div class="descriptions">
+                        <h1>直式握拍法</h1>
+                        <p>正面拇指第一指节和食指第二指节握拍，拍柄压住虎口(两指间距离适中)，背面中指、无名指和小指自然弯曲斜形重叠，中指第一指节顶住球拍的后上部使球拍保持平稳。</p>
+                        <a
+                            href="https://jingyan.baidu.com/article/39810a23cfafa9b636fda69d.html"><button>查看更多>></button></a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-sm-6" style="margin-left: 0%;">
+                <div class="card">
+                    <img src="images/b3.gif">
+                    <div class="descriptions">
+                        <h1>削攻型握法</h1>
+                        <p>正面拇指自然弯曲紧贴拍柄左侧，第一指节用力下压，其余四指自然分开托住球拍背面。直式握拍法的重点与难点是握拍舒适，手腕控制拍面恰当。</p>
+                        <a href="https://www.oh100.com/peixun/pingpangqiu/358249.html"><button>查看更多>></button></a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-sm-6" style="margin-left: 0%;margin-bottom:2%">
+                <div class="card">
+                    <img src="images/b4.gif">
+                    <div class="descriptions">
+                        <h1>乒乓球常用技术</h1>
+                        <p> <br>攻球：打、拉、撕、拧、挑<br>
+                            防守：搓、削、拨、带<br>
+                            控制：摆、撇、切 </p>
+                        <a href="https://www.bilibili.com/read/cv4074701/"><button>查看更多>></button></a>
+
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="jumbotron" style="margin-top: 10px; width: 112%;margin-left: -7%;">
+            <h1>玩乒乓球，来这里就对了</h1>
+            <p>乒乓球社精彩超乎你想象</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多...</a></p>
+        </div>
+    </div>
+
+
+    <div class="container" style="text-align: center;">
+        <p>Copyright &copy; 2021.Primitive All rights reserved.</p>
+    </div>
+</body>
+
+</html>

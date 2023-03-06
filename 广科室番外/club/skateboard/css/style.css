@@ -1,0 +1,158 @@
+.col-md-7{
+margin-top: 20px;
+}
+img{
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+ul li a {
+    color: #666;
+    text-decoration: none;
+}
+ul li a:hover {
+    text-decoration: none;
+}
+
+/* 设置container宽度为1280 */
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+header{
+    padding-left: 0!important;
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+.nav{
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px
+}
+
+.nav a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.nav a:hover{
+    background-color: #fff;
+    color: #333;
+}
+.nav a::before{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.news li{
+    width: 25%;
+    float: left;
+    height: 171px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.news li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+   
+}
+
+.news li img{
+    width:100%;
+    border-radius: 10px;
+    
+}
+
+.news li:nth-child(1){
+    width: 50%;
+    height: 352px;
+   
+    /* background-color: rebeccapurple; */
+}
+
+.news li a p{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 41px;
+   margin-bottom: 0px;
+   bottom: 1px;
+   background-color: rgba(0, 0, 0, .5);
+   font-size: 10px;
+   font-weight: 100;
+   color: #fff;
+   width: 100%;
+   border-radius: 10px;
+   line-height: 41px;
+
+}
+
+.publish{
+    
+   
+}
+
+.publish .row{
+    display: block;
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.publish .row:hover{
+    background-color: #bbb;
+    transform: translateY(-3px);
+    box-shadow:1px 3px 9px #BABABA;
+}
+
+.news ul li img{
+    transition: 0.3s ease-in-out;
+
+}
+
+.news ul li img:hover{
+    transform: translateY(-3px);
+    box-shadow:1px 3px 9px #BABABA;
+}
+
+.v{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%; 
+    width: auto;
+    height: auto; 
+    z-index: -100;
+    /* backdrop-filter: blur(50px);  */
+    /* //添加灰度蒙版，如果设定为100%则视频显示为黑白 */
+    opacity: 0.4;
+    filter:sepia(100%)
+}
+
+
+.tu div{
+    margin-top: 20px;
+}

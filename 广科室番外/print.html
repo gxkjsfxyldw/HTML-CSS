@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>打印</title>
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <link rel="icon" type="image/png" sizes="144x144" href="images/picon.png" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <!-- Bootstrap-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Style-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- fontawesome-CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <!-- Viwer-css -->
+    <link rel="stylesheet" href="Viewer.js/css/viewer.min.css">
+    <link
+        href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <link
+        href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+
+    <style type="text/css">
+        .mytabs .nav .nav-item .nav-link {
+            background-color: #4776be;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .mytabs .nav .nav-item .active {
+            background-color: #4575bda4;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .tab-content .active {
+            background-color: #4575bda4;
+            padding: 30px 20px 0 20px;
+            border-radius: 0 20px 20px 20px;
+        }
+
+        .tabs_block {
+            padding: 5px;
+            height: 110px;
+            width: 100%;
+            background-color: #e9ecef;
+            margin-bottom: 45px;
+            border-radius: 15px;
+            color: black;
+        }
+
+        .tabs_block .img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- start 导航栏 -->
+    <div id="home">
+        <!-- navigation -->
+        <div class="main-top py-1">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+                <div class="container">
+                    <!-- logo -->
+                    <h1>
+                        <a class="navbar-brand font-weight-bold" href="index.html">
+                            <span>打印</span>
+                        </a>
+                    </h1>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-lg-auto">
+                            <!-- 首页 -->
+                            <li class="nav-item mt-lg-0 mt-3">
+                                <a class="nav-link" href="index.html">首页
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <!-- 地图 -->
+                            <li class="nav-item dropdown mx-lg-4 my-lg-0 my-3">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    地图
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="2d.html" target="_blank">2D 地图</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="3d.html" target="_blank">3D 地图</a>
+                                </div>
+                            </li>
+                            <!-- 社团 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    社团
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="club/skateboard/index.html" target="_blank">滑板协会</a>
+                                    <a class="dropdown-item" href="club/rollerskating/index.html"
+                                        target="_blank">轮滑协会</a>
+                                    <a class="dropdown-item" href="club/fishing/index.html" target="_blank">钓鱼协会</a>
+                                    <a class="dropdown-item" href="club/basketball/index.html" target="_blank">篮球协会</a>
+                                    <a class="dropdown-item" href="club/computer/index.html" target="_blank">计算机协会</a>
+                                    <a class="dropdown-item" href="club/pingpong/index.html" target="_blank">乒乓球协会</a>
+                                </div>
+                            </li>
+                            <!-- 打印 -->
+                            <li class="nav-item mx-lg-4 my-lg-0 my-3 active">
+                                <a class="nav-link" href="print.html">打印</a>
+                            </li>
+                            <!-- 微电影 -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="movies.html">微电影</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end 导航栏 -->
+
+    <!-- start 顶部图片 -->
+    <div class="inner-banner-w3ls">
+        <div class="container">
+        </div>
+    </div>
+    <!-- end 顶部图片 -->
+
+    <!-- start 页面详细路径 -->
+    <div class="breadcrumb-agile">
+        <div aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">主页</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">打印</li>
+            </ol>
+        </div>
+    </div>
+    <!-- end 页面详细路径 -->
+
+    <!-- start 打印地点内容 -->
+    <section class="about py-5" style="margin-top: -40px;">
+        <div class="container py-xl-5 py-lg-3">
+            <div class="mytabs">
+                <!-- Boostrap Nav tabs -->
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#item1" aria-controls="item1" data-toggle="pill">男宿舍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#item2" aria-controls="item2" data-toggle="pill">女宿舍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#item3" aria-controls="item3" data-toggle="pill">食堂</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#item4" aria-controls="item4" data-toggle="pill">后街</a>
+                    </li>
+                </ul>
+                <!-- Boostrap Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="item1">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：11210</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：12208</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：13108</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：8413</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：6212</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：7308</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：20115</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="item2">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：18104</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：17101</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：14306</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：15210</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>宿舍：3211</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.18 双0.3<br>彩色：单0.32 双0.5</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="item3">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>东苑餐厅 一楼</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.4 双0.8<br>彩色：单0.82 双1</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>西苑餐厅 一楼</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.4 双0.8<br>彩色：单0.82 双1</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="item4">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="tabs_block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="images/p.jpg" class="img" alt="1">
+                                                    </td>
+                                                    <td style="width: 10px;"></td>
+                                                    <td>美食街打印店</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>黑白：单0.5 双0.8<br>彩色：单0.85 双1</td>
+                                                </tr>
+                                                <tr style="text-align: right;">
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end 打印地点内容 -->
+
+    <!-- start footer -->
+    <footer>
+        <div class="w3ls-footer-grids pt-sm-4 pt-3">
+            <div class="container py-xl-5 py-lg-3">
+                <div class="row">
+                    <div class="col-md-4 w3l-footer">
+                        <h2 class="mb-sm-3 mb-2">
+                            <a href="index.html" class="text-white font-italic font-weight-bold">
+                                <span>番外</span>简介
+                            </a>
+                        </h2>
+                        <p>
+                            一个融合校园文化以及校园服务的网站，主要内容是收录并介绍学校社团，帮助学校宣传发展社团文化的网站。次要收录学生自制云打印服务，便利学生的打印支持学生自创打印；展示校园地图，包括规划2D地图以及Web3D地图；校园微电影板块，宣传校园正能量，输出正确文化价值观。网站旨在便利学生的校园体验，帮助学校发展校园文化。
+                        </p>
+                    </div>
+                    <div class="col-md-4 w3l-footer my-md-0 my-4">
+                        <h3 class="mb-sm-3 mb-2 text-white">联系方式</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fas fa-location-arrow float-left"></i>
+                                <p class="ml-4">来宾校区（主校区）来宾市铁北大道966号
+                                    <span></span>
+                                </p>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="my-3">
+                                <i class="fas fa-phone float-left"></i>
+                                <p class="ml-4">电话:18878791474</p>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <i class="fas fa-location-arrow float-left"></i>
+                                <p class="ml-4">柳州校区（分校区）柳州市柳北区沙塘镇君武路170号
+                                    <span></span>
+                                </p>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="my-3">
+                                <i class="fas fa-phone float-left"></i>
+                                <p class="ml-4">电话：18176684242</p>
+                                <div class="clearfix"></div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4 w3l-footer">
+                        <h3 class="mb-sm-3 mb-2 text-white">快速通道</h3>
+                        <div class="nav-w3-l">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="http://zjy.gxstnu.edu.cn/" target="_blank">职业技术教育学院</a>
+                                </li>
+                                <li class="mt-2">
+                                    <a href="http://sjy.gxstnu.edu.cn/" target="_blank">数学与计算机科学学院</a>
+                                </li>
+                                <li class="mt-2">
+                                    <a href="http://jdy.gxstnu.edu.cn/" target="_blank">机械与电器工程学院</a>
+                                </li>
+                                <li class="mt-2">
+                                    <a href="http://ysy.gxstnu.edu.cn/" target="_blank">美术与设计学院</a>
+                                </li>
+                                <li class="mt-2">
+                                    <a href="http://yywd.gxstnu.edu.cn/" target="_blank">音乐与舞蹈学院</a>
+                                </li>
+                                <li class="mt-2">
+                                    <a href="http://tyy.gxstnu.edu.cn/" target="_blank">体育学院</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top mt-5 pt-lg-4 pt-3 pb-lg-0 pb-3 text-center">
+                    <p class="copy-right-grids mt-lg-1">Copyright &copy; 2021.Primitive All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- slider -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: true,
+                speed: 1000,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+    <!-- slider -->
+    
+    <script src="js/fixed-nav.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/medic.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

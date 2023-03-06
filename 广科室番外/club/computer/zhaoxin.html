@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>计算机协会 - 加入我们</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png" />
+
+    <style>
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: #99CCFF;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- 小飞机升顶专用 -->
+    <div id="up"
+        style="position: fixed; bottom: 30px; right: 40px; z-index: 20;transform: translateY(110px); transition:  0.5s ease-in-out;">
+        <a href="#top"><span class="glyphicon glyphicon-hand-up" style="color: #666; font-size: 50px;">
+                <p style="font-size: 10px;;padding-left: 2px;">返回顶层</p>
+            </span></a>
+    </div>
+    <!-- 小飞机升顶专用 -->
+
+    <script>
+        window.onscroll = function () {
+            ele = document.getElementById('up');
+            ele.style.transform = document.documentElement.scrollTop > 500 ? 'translateY(0px)' : 'translateY(110px)';
+        }
+    </script>
+    <!-- 小飞机升顶专用 -->
+
+
+    <div class="container">
+        <div class="row">
+            <header class="col-md-2" style="margin-left: 10px; margin-top: 10px;">
+                <div class="logo">
+                    <a href="index.html"><img src="images/e.gif" alt="" style="border-radius: 10px
+                    ;"></a>
+                </div>
+                <div class="nav" style="margin-top: 10px;">
+                    <ul>
+                        <li style="margin-top: 7px;"><a href="../computer/index.html"
+                                class="glyphicon glyphicon-plus-sign">返回汇总</a></li>
+                        <li><a href="http://www.ict.cas.cn/kxcb/jsjfzs/" class="glyphicon glyphicon-flash">计算机故事</a>
+                        </li>
+                        <li><a href="zhaopian.html" class="glyphicon glyphicon-eject">协会照片</a></li>
+                        <li><a href="http://www.ccw.com.cn/" class="glyphicon glyphicon-fire">计算机新闻</a></li>
+                        <li><a href="#" class="glyphicon glyphicon-user">关于协会</a></li>
+                    </ul>
+                </div>
+            </header>
+            <article class="col-md-7">
+                <!-- 新闻区域？ -->
+                <div>
+                    <img src="images/s2.jpg" style="width: 100%;" alt="">
+                </div>
+                <div class="publish">
+
+                    <div class="row">
+                        <div class="col-sm-7">
+
+                            <h2><a
+                                    href="https://www.baidu.com/link?url=Yg4DA4hJGBPrUQPVCcSReWUv48PY8Azohem9d5ikuW9KnUxvbOgdwF6q5UtRxUz3o53FyH3nEqjtpn51DJZCLiVxefq87QMcge5WYx5eg1pHJKvlSEB78SmSP0ZjlGqpyzA8l-7-CMHiNqks6Tx6bDjnmBv7R10WWFwSGjkU8jZKbYEk6-r_vlD2jC3-bAmP&wd=&eqid=e7103a1e0000c665000000066197acad">你了解CPU吗？</a><span
+                                    class="label label-warning">GOOD</span></h2>
+
+                            <p>CPU的基本构造来了解一下 </p> <br />
+                            <p class="label label-default">凯琳弗洛伊德2021/9/14</p>
+                        </div>
+                        <div class="col-sm-5"><img src="images/cpu.jpg" class="thumbnail" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h2><a
+                                    href="https://www.baidu.com/link?url=xfUY5eeKMIqc4TybAvJOB-zyngxurSunHmM18Y1SM-sNHsF6Wf-Xthl6QPKRUX5fEf6alaMWKUyaNnmllU_2xMrcItczM19UzfFYVndrIRpiHVVi7P-VBXFWnqXRupNYR63n8GPp7yf9rZhQb3PAxq&wd=&eqid=b9bb93fa00007726000000066197acd3">量子计算机概念
+                                </a> <span class="label label-success">
+                                    <p class="glyphicon glyphicon-education"></p>
+                                </span></h2>
+                            <p>关于量子基本计算模型</p> <br />
+                            <p class="label label-default">xxh发布于2021/9/14</p>
+                        </div>
+
+                        <div class="col-sm-5"><img src="images/lz.gif" class="thumbnail" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h2> <a href="https://www.microsoft.com/zh-cn/windows/windows-11"> Windows11已经正式发布 </a>
+                                <span class="label label-warning">New</span>
+                            </h2>
+                            <p> 看看新特性吧全新的Windows</p> <br />
+                            <p class="label label-default">xmx发布于2021/9/4</p>
+                        </div>
+                        <div class="col-sm-5"><img src="images/win11.jpg" class="thumbnail" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h2><a href="https://www.nvidia.cn/data-center/pascal-gpu-architecture/"> GPU架构的一些有关资料 </a>
+                                <span class="label label-primary">New</span>
+                            </h2>
+
+                            <p>架构是什么？ </p> <br />
+                            <p class="label label-default">realPX布于2021/8/30</p>
+                        </div>
+
+                        <div class="col-sm-5"><img src="images/jg.jpg" class="thumbnail" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h2><a href="https://baijiahao.baidu.com/s?id=1639124922610822092&wfr=spider&for=pc">
+                                    计算机之父图灵和钞票 </a> <span class="label label-primary">New</span></h2>
+                            <p>致敬先驱 </p> <br />
+                            <p class="label label-default">艾琳斯塔克布于2021/8/30</p>
+                        </div>
+                        <div class="col-sm-5"><img src="images/tl.jpg" class="thumbnail" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <aside class="col-md-2">
+                <div class="hot">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-9">
+                            <div class="thumbnail" style="background-color: #eee; margin-top: 10px;">
+                                <img src="images/ewm.png" alt="#" style="max-width: 85%;min-width: 20%;">
+                                <div class="caption">
+                                    <h3>加入我们</h3>
+                                    <p>欢迎加入QQ群，有什么问题随时问</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="jumbotron" style="margin-top: 10px; background-color: #99CC99;">
+            <h1>Hello, 你好! </h1>
+            <p>关于钓鱼的各种</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">抛一竿子...</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

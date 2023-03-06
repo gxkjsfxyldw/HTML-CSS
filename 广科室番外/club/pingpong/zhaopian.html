@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>乒乓球协会 - 活动照片</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 小飞机升顶专用 -->
+    <div id="up"
+        style="position: fixed; bottom: 30px; right: 40px; z-index: 20;transform: translateY(110px); transition:  0.5s ease-in-out;">
+        <a href="#top"><span class="glyphicon glyphicon-plane" style="color: #666; font-size: 50px;">
+                <p style="font-size: 10px;padding-left: 2px;">返回顶层</p>
+            </span></a>
+    </div>
+    <!-- 小飞机升顶专用 -->
+
+    <script>
+        window.onscroll = function () {
+            ele = document.getElementById('up');
+            ele.style.transform = document.documentElement.scrollTop > 500 ? 'translateY(0px)' : 'translateY(110px)';
+        }
+    </script>
+    <!-- 小飞机升顶专用 -->
+
+    <div class="container">
+        <div class="row">
+            <header class="col-md-2" style="margin-left: 10px; margin-top: 20px;">
+                <div class="logo">
+                    <a href="index.html"><img src="images/b9.gif" alt="" style="border-radius: 10px
+                    ;"></a>
+                </div>
+                <div class="nav" style="margin-top: 10px;">
+                    <ul>
+                        <li style="margin-top: 10px;"><a href="index.html"
+                                class="glyphicon glyphicon-plus-sign">返回汇总</a></li>
+                        <li><a href="https://zhuanlan.zhihu.com/p/144338923" class="glyphicon glyphicon-flash">社团故事</a>
+                        </li>
+                        <li><a href="zhaopian.html" class="glyphicon glyphicon-eject">社团照片</a></li>
+                        <li><a href="https://baike.sogou.com/v3618631.htm?fromTitle=%E5%9B%BD%E4%B9%93"
+                                class="glyphicon glyphicon-fire">最新资讯</a></li>
+                        <li><a href="https://baike.sogou.com/v9518.htm?fromTitle=%E4%B9%92%E4%B9%93%E7%90%83"
+                                class="glyphicon glyphicon-user">关于我们</a></li>
+                    </ul>
+                </div>
+            </header>
+            <article class="col-md-9 tu" style="margin-top: 10px;">
+                <!-- 新闻区域？ -->
+                <div class="jumbotron">
+                    <h1>社团照片</h1>
+                    <p>来看看有啥新花样</p>
+                    <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">国乒牌面</span>
+                    <img src="images/7.jpg" class="img-thumbnail">
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">国乒牌面</span>
+                    <img src="images/2.jpeg" class="img-thumbnail">
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">活动照片</span>
+                    <img src="images/3.png" class="img-thumbnail">
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">活动照片</span>
+                    <img src="images/4.png" class="img-thumbnail">
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">活动照片</span>
+                    <img src="images/5.png" class="img-thumbnail">
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">活动照片</span>
+                    <img src="images/6.png" class="img-thumbnail">
+                </div>
+
+
+        </div>
+        <div class="jumbotron" id="x" style="margin-top: 10px;">
+            <h1>Hello, 你好! </h1>
+            <p>想了解更多吗？</p>
+            <p><a class="btn btn-primary btn-lg" href="index.html" id="y" role="button">了解一下</a></p>
+
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer class="footer_section">
+        <div class="container" style="text-align: center;">
+            <p>Copyright &copy; 2021.Primitive All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 底部 -->
+</body>
+
+</html>

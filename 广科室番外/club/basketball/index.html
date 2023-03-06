@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>篮球协会</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png" />
+
+    <style>
+        body {
+            background-color: #ffc800;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <!-- 丝滑滚动到顶部专用 -->
+
+</head>
+
+<body>
+    <!-- 小飞机升顶专用 -->
+    <div id="up"
+        style="position: fixed; bottom: 20px; right: 20px; z-index: 20;transform: translateY(180px); transition:  0.5s ease-in-out;">
+        <a href="#top"><span class="glyphicon glyphicon-plane"
+                style="color:#6c4e9e; font-size: 50px;text-shadow:-2px 6px 8px #333;"></span></a>
+    </div>
+    <!-- 小飞机升顶专用 -->
+
+    <script>
+        window.onscroll = function () {
+            ele = document.getElementById('up');
+            ele.style.transform = document.documentElement.scrollTop > 500 ? 'translateY(0px)' : 'translateY(180px)';
+        }
+    </script>
+    <!-- 小飞机升顶专用 -->
+
+    <div class="container">
+
+        <!-- <div style="opacity: 1; ">
+            <video src="images/kb.mp4" autoplay="autoplay" controls muted controls="controls" loop="loop"
+                style=" margin-top: 0%; margin-left: -5%; width: 110%; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius :20px;"></video>
+        </div> -->
+        <div style="opacity: 1; ">
+            <video src="https://gxkjsfxyfw.oss-cn-guangzhou.aliyuncs.com/kb.mp4" autoplay="autoplay" controls muted
+                controls="controls" loop="loop"
+                style=" margin-top: 0%; margin-left: -5%; width: 110%; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius :20px;"></video>
+        </div>
+
+
+        <div class="row">
+            <header class="col-md-2" style="margin-left: 4%;margin-top: 20px;">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.jpg" alt="" style="border-radius: 10px
+                    ;"></a>
+                </div>
+                <div class="nav" style="margin-top: 10px;">
+                    <ul>
+                        <li style="margin-top: 10px;"><a href="../../index.html"
+                                class="glyphicon glyphicon-plus-sign">返回汇总</a></li>
+                        <li><a href="https://baike.baidu.com/item/%E7%AF%AE%E7%90%83/123564?fr=aladdin"
+                                class="glyphicon glyphicon-flash">社团故事</a></li>
+                        <li><a href="zhaopian.html" class="glyphicon glyphicon-eject">社团照片</a></li>
+                        <li><a href="https://sports.qq.com/" class="glyphicon glyphicon-fire">最新资讯</a></li>
+                        <li><a href="#" class="glyphicon glyphicon-user">关于我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="thumbnail" style="background-color: #eee; margin-top: 10px; border-radius: 10px;">
+                    <div class="caption">
+                        <span class="label label-warning">Good</span>
+                        <h3>预览更多</h3>
+                        <p>我们还收录了其他社团</p>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" style="width: 100%;" type="button"
+                                id="dropdownMenu1" data-toggle="dropdown">
+                                其他社团
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"
+                                style="min-width: 100%; text-align: center;">
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../skateboard/index.html">滑板协会</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../rollerskating/index.html">轮滑协会</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../fishing/index.html">钓鱼协会</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../computer/index.html">计算机协会</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1"
+                                        href="../pingpong/index.html">乒乓球协会</a></li>
+
+                            </ul>
+                        </div>
+                        <script src="js/jquery.min.js"></script>
+                        <script src="js/bootstrap.min.js"></script>
+                    </div>
+                </div>
+
+            </header>
+            <article class="col-md-7">
+                <!-- 新闻区域？ -->
+                <div class="news clearfix">
+                    <ul>
+                        <li>
+                            <a href="https://www.163.com/dy/article/E8CIM0RI05372IT3.html">
+                                <img src="images/ow.jpg" alt="">
+                                <p>街球是篮球的艺术</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/d1.gif" alt="">
+                                <p>
+                                    这才叫盖帽！
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/d2.gif" alt="">
+                                <p>
+                                    大风车灌篮
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://baike.baidu.com/item/2020%E5%B9%B4%E4%B8%9C%E4%BA%AC%E5%A5%A5%E8%BF%90%E4%BC%9A%E7%94%B7%E7%AF%AE%E6%AF%94%E8%B5%9B">
+                                <img src="images/oy.gif" alt="" ;>
+                                <p>2020奥运会的篮球</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.qulishi.com/mingxing/Kobe%20Bryant/zhiliao.html">
+                                <img src="images/kb.jpg" alt="">
+                                <p>一个传奇的故事</p>
+                            </a>
+                    </ul>
+                </div>
+                <div class="publish">
+                    <div class="row" style="background-color: #6929d9;">
+                        <div class="col-sm-7">
+                            <h2><a href="https://www.cbaleague.com/#/">新的动态 </a><span
+                                    class="label label-warning">New</span></h2>
+                            <p>坚持训练，每天都要训练 </p> <br />
+                            <p class="label label-default">Realsofa发布于2021/9/14</p>
+                        </div>
+                        <div class="col-sm-5"><img src="images/cba.png" class="thumbnail" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row" style="background-color: #6929d9;">
+                        <div class="col-sm-7">
+                            <h2><a
+                                    href="https://www.baidu.com/link?url=QAp4BVOyDBMq5eMv-d-QffJ6ToIIfea1yhngYI0yhzzHiQ7S1nnc4M5H_1wunxWX&wd=&eqid=f97f1e440001d3a30000000661978983">社团活动的故事
+                                </a> <span class="label label-success">
+                                    <p class="glyphicon glyphicon-education"></p>
+                                </span></h2>
+
+                            <p>在新的阶段取得成功 Frontside180 </p> <br />
+                            <p class="label label-default">有点东西的2021/9/14</p>
+                        </div>
+
+                        <div class="col-sm-5"><img src="images/d3.gif" class="thumbnail" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row" style="background-color: #6929d9;">
+                        <div class="col-sm-7">
+                            <h2> <a href="https://www.bilibili.com/video/BV1r4411Q7dM?spm_id_from=333.999.0.0">
+                                    Crossover? 有手就会 </a><br> <span class="label label-warning">New</span></h2>
+
+                            <p>Let's go，打波打波 </p> <br />
+                            <p class="label label-default">阿伦.艾弗森成名绝技2021/9/4</p>
+                        </div>
+
+                        <div class="col-sm-5"><img src="images/ai.gif" class="thumbnail" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row" style="background-color: #6929d9;">
+                        <div class="col-sm-7">
+                            <h2><a href="https://china.nba.com/"> 人类篮球天花板 </a><br> <span
+                                    class="label label-warning">New</span></h2>
+
+                            <p>极致的篮球艺术 </p> <br />
+                            <p class="label label-default">每个篮球运动员的梦想之地2021/8/30</p>
+                        </div>
+
+                        <div class="col-sm-5"><img src="images/a1.gif" class="thumbnail" alt="" style="width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="col-md-2" style="margin-top: 10px;">
+                <div class="hot">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-9">
+                            <div class="thumbnail" style="background-color: #eee; margin-top: 10px;">
+                                <img src="images/logo2.png" alt="#" style="max-width: 85%;min-width: 20%;">
+                                <div class="caption">
+                                    <h3>Join Us</h3>
+                                    <p>新的学期新的面孔，欢迎加入。</p>
+                                    <p><a href="zhaoxin.html" class="btn btn-warning" role="button"">加入</a>
+                        
+							<div></div>
+                            <a href=" #" class="btn btn-default" role="button">详情</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="jumbotron" style="margin-top: 10px; width: 110%;margin-left: -5%;">
+            <h1>No Brothers No Basketball</h1>
+            <p>每周新片，来看看吧</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多...</a></p>
+        </div>
+    </div>
+
+    <footer class="footer_section">
+        <div class="container" style="text-align: center;">
+            <p>Copyright &copy; 2021.Primitive All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

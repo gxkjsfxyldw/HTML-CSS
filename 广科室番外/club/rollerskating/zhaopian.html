@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>轮滑社 - 协会照片</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png" />
+    <style>
+        body {
+            background-color: rgb(253, 214, 183);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 小飞机升顶专用 -->
+    <div id="up"
+        style="position: fixed; bottom: 30px; right: 40px; z-index: 20;transform: translateY(110px); transition:  0.5s ease-in-out;">
+        <a href="#top"><span class="glyphicon glyphicon-hand-up" style="color: #666; font-size: 50px;">
+                <p style="font-size: 10px;padding-left: 2px;">返回顶层</p>
+            </span></a>
+    </div>
+    <!-- 小飞机升顶专用 -->
+
+    <script>
+        window.onscroll = function () {
+            ele = document.getElementById('up');
+            ele.style.transform = document.documentElement.scrollTop > 500 ? 'translateY(0px)' : 'translateY(110px)';
+        }
+    </script>
+    <!-- 小飞机升顶专用 -->
+
+    <div class="container">
+        <div class="row">
+            <header class="col-md-2" style="margin-left: 10px; margin-top: 20px;">
+                <div class="logo">
+                    <a href="index.html"><img src="images/e.gif" alt="" style="border-radius: 10px
+                    ;"></a>
+                </div>
+                <div class="nav" style="margin-top: 10px;">
+                    <ul>
+                        <li style="margin-top: 7px;"><a href="index.html" class="glyphicon glyphicon-plus-sign">返回汇总</a>
+                        </li>
+                        <li><a href="https://zhidao.baidu.com/question/1709035827021137940.html"
+                                class="glyphicon glyphicon-flash">轮滑故事</a></li>
+                        <li><a href="zhaopian.html" class="glyphicon glyphicon-eject">社团照片</a></li>
+                        <li><a href="http://hainan.ifeng.com/c/8Ap07nb24Tf" class="glyphicon glyphicon-fire">轮滑新闻</a>
+                        </li>
+                        <li><a href="#" class="glyphicon glyphicon-user">关于我们</a></li>
+                    </ul>
+                    </ul>
+                </div>
+            </header>
+            <article class="col-md-9 tu" style="margin-top: 10px;">
+                <!-- 新闻区域？ -->
+                <div class="jumbotron" style="background-color: rgb(255, 172, 124);">
+                    <h1>社团照片</h1>
+                    <p>看看我们都整了什么活儿...</p>
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">活动视频</span>
+                    <!-- <div>
+                        <video src="images/v2.mp4" controls muted controls="controls" loop="loop"
+                            style="width: 100%; border-radius: 20px;"></video>
+                    </div> -->
+                    <div>
+                        <video src="https://gxkjsfxyfw.oss-cn-guangzhou.aliyuncs.com/v2.mp4" controls muted
+                            controls="controls" loop="loop" style="width: 100%; border-radius: 20px;"></video>
+                    </div>
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">活动视频</span>
+                    <!-- <div>
+                        <video src="images/v3.mp4" controls muted controls="controls" loop="loop"
+                            style="width: 100%; border-radius: 20px;"></video>
+                    </div> -->
+                    <div>
+                        <video src="https://gxkjsfxyfw.oss-cn-guangzhou.aliyuncs.com/v3.mp4" controls muted
+                            controls="controls" loop="loop" style="width: 100%; border-radius: 20px;"></video>
+                    </div>
+
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">活动视频</span>
+                    <!-- <div>
+                        <video src="images/v4.mp4" controls muted controls="controls" loop="loop"
+                            style="width: 100%; border-radius: 20px;"></video>
+                    </div> -->
+                    <div>
+                        <video src="https://gxkjsfxyfw.oss-cn-guangzhou.aliyuncs.com/v4.mp4" controls muted
+                            controls="controls" loop="loop" style="width: 100%; border-radius: 20px;"></video>
+                    </div>
+                </div>
+                <div>
+                    <span class="label label-primary" style="font-size: 20px;">活动视频</span>
+                    <!-- <div>
+                        <video src="images/v1.mp4" controls muted controls="controls" loop="loop"
+                            style="width: 100%; border-radius: 20px;"></video>
+                    </div> -->
+                    <div>
+                        <video src="https://gxkjsfxyfw.oss-cn-guangzhou.aliyuncs.com/v1.mp4" controls muted
+                            controls="controls" loop="loop" style="width: 100%; border-radius: 20px;"></video>
+                    </div>
+
+                </div>
+        </div>
+        <div class="jumbotron" id="x" style="margin-top: 10px;">
+            <h1>Hello, 你好! </h1>
+            <p>想了解更多吗？</p>
+            <p><a class="btn btn-primary btn-lg" href="index.html" id="y" role="button">了解一下</a></p>
+
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer class="footer_section">
+        <div class="container" style="text-align: center;">
+            <p>Copyright &copy; 2021.Primitive All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 底部 -->
+</body>
+
+</html>

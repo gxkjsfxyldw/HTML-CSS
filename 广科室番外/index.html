@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="" />
+	<link rel="icon" type="image/png" sizes="144x144" href="images/icon.png" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<title>首页 - 科师番外</title>
+
+	<!-- swiper css-->
+	<link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
+	<!-- swiper js-->
+	<script src="js/swiper/swiper-bundle.min.js"></script>
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- fontawesome-CSS -->
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link
+		href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+	<link
+		href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+
+	<!-- Swiper Demo styles -->
+	<style>
+		.swiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			border-radius: 25px;
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- start 导航栏 -->
+	<div id="home">
+		<!-- navigation -->
+		<div class="main-top py-1">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+				<div class="container">
+					<!-- logo -->
+					<h1>
+						<a class="navbar-brand font-weight-bold" href="index.html">
+							<span>
+								<li class="fas fa-american-sign-language-interpreting"></li> 科师
+							</span>番外
+						</a>
+					</h1>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-lg-auto">
+							<!-- 首页 -->
+							<li class="nav-item active mt-lg-0 mt-3">
+								<a class="nav-link" href="index.html">首页
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<!-- 地图 -->
+							<li class="nav-item dropdown mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									地图
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="2d.html" target="_blank">2D 地图</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="3d.html" target="_blank">3D 地图</a>
+								</div>
+							</li>
+							<!-- 社团 -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									社团
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="club/skateboard/index.html" target="_blank">滑板协会</a>
+									<a class="dropdown-item" href="club/rollerskating/index.html"
+										target="_blank">轮滑协会</a>
+									<a class="dropdown-item" href="club/fishing/index.html" target="_blank">钓鱼协会</a>
+									<a class="dropdown-item" href="club/basketball/index.html" target="_blank">篮球协会</a>
+									<a class="dropdown-item" href="club/computer/index.html" target="_blank">计算机协会</a>
+									<a class="dropdown-item" href="club/pingpong/index.html" target="_blank">乒乓球协会</a>
+									<!-- 分割线 -->
+									<!-- <div class="dropdown-divider"></div> -->
+								</div>
+							</li>
+							<!-- 打印 -->
+							<li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href="print.html">打印</a>
+							</li>
+							<!-- 微电影 -->
+							<li class="nav-item">
+								<a class="nav-link" href="movies.html">微电影</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- end 导航栏 -->
+
+	<!-- start 轮播图 -->
+	<div class="slider">
+		<div class="callbacks_container">
+			<ul class="rslides callbacks callbacks1" id="slider4"
+				style="border-radius: 0 0 20px 20px; margin-top: 50px;">
+				<li>
+					<div class="banner-top1">
+						<div class="banner-info_agile_w3ls">
+							<div class="container">
+								<h3 style="color: rgb(82, 162, 253);">社团汇总
+								</h3>
+								<p class="mt-3 mb-md-5 mb-3" style="color: rgb(120, 180, 248);">
+									集合了社团的网站介绍了很多有趣的你是初来乍到，<br>
+									不妨凭借高涨的热情来了解一下吧。
+								</p>
+								<a href="#blog1" style="border-radius: 20px;">了解更多
+									<i class="fa fa-caret-right ml-2" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-top2">
+						<div class="banner-info_agile_w3ls">
+							<div class="container">
+								<h3 style="color: rgb(42, 42, 43);">打印服务
+								</h3>
+								<p class="mt-3 mb-md-5 mb-3" style="color: rgb(66, 66, 66);">
+									这个窗口罗列出校园的智能自助打印，快捷方便而且价格实惠！
+								</p>
+								<a href="#blog2" style="border-radius: 20px;">了解更多
+									<i class="fa fa-caret-right ml-2" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-top3">
+						<div class="banner-info_agile_w3ls">
+							<div class="container">
+								<h3 style="color: rgb(81, 111, 168);">学校地图
+								</h3>
+								<p class="mt-3 mb-md-5 mb-3" style="color: rgb(106, 135, 189);">
+									直接预览学校的 2D 规划地图以及直观的 3D 地图！
+								</p>
+								<a href="#blog3" style="border-radius: 20px;">了解更多
+									<i class="fa fa-caret-right ml-2" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-top4">
+						<div class="banner-info_agile_w3ls">
+							<div class="container">
+								<h3 style="color: rgb(245, 223, 26);">学生微电影
+								</h3>
+								<p class="mt-3 mb-md-5 mb-3" style="color: rgb(240, 227, 108);">
+									呐，给你一张免费电影票。
+								</p>
+								<a href="#blog" style="border-radius: 20px;">马上瞧瞧
+									<i class="fa fa-caret-right ml-2" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-top5">
+						<div class="banner-info_agile_w3ls">
+							<div class="container">
+								<h3 style="color: rgb(255, 255, 255);">科师宣传片
+								</h3>
+								<p class="mt-3 mb-md-5 mb-3" style="color: rgb(175, 175, 175);">
+									关于学校的一个视频
+								</p>
+								<a href="#blog4" style="border-radius: 20px;">马上瞧瞧
+									<i class="fa fa-caret-right ml-2" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end 轮播图 -->
+
+	<!--  -->
+	<div class="clearfix"></div>
+	<!--  -->
+
+	<!-- start 作者 -->
+	<section class="team py-5" style="background-color: #eee;">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="w3ls-titles text-center mb-5">
+				<h3 class="title">作者简介</h3>
+				<span>
+					<i class="fas fa-male"></i>
+				</span>
+				<p class="mt-2">“番外”里的校园文化和有关校园生活的内容都是他们编写的。</p>
+			</div>
+			<div class="row inner-sec-w3layouts-agileinfo">
+				<div class="col-md-4 team-grids text-center">
+					<img src="images/t1.jpg" class="img-fluid" alt="" style="border-radius: 20px;width: 60%;">
+					<div class="team-info">
+						<div class="caption">
+							<h4>马瑞道</h4>
+							<h6>Ruidao Ma</h6>
+						</div>
+						<div class="social-icons-section">
+							<a class="fac" href="">
+								<i class="fab fa-qq"></i>
+							</a>
+							<a class="twitter" href="#">
+								<i class="fab fa-weixin"></i>
+							</a>
+							<a class="pinterest" href="#">
+								<i class="fab fa-weibo"></i>
+							</a>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4 team-grids my-md-0 my-4 text-center">
+					<img src="images/t3.jpg" class="img-fluid" alt="" style="border-radius: 20px;width: 60%;">
+					<div class="team-info">
+						<div class="caption">
+							<h4>庞希</h4>
+							<h6>Xi Pang</h6>
+						</div>
+						<div class="social-icons-section">
+							<a class="fac" href="#">
+								<i class="fab fa-qq"></i>
+							</a>
+							<a class="twitter" href="#">
+								<i class="fab fa-weixin"></i>
+							</a>
+							<a class="pinterest" href="#">
+								<i class="fab fa-weibo"></i>
+							</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 team-grids text-center">
+					<img src="images/t4.jpg" class="img-fluid" alt="" style="border-radius: 20px;width: 60%;">
+					<div class="team-info">
+						<div class="caption">
+							<h4>李达旺 </h4>
+							<h6>Dawang Li</h6>
+						</div>
+						<div class="social-icons-section">
+							<a class="fac" href="#">
+								<i class="fab fa-qq"></i>
+							</a>
+							<a class="twitter" href="#">
+								<i class="fab fa-weixin"></i>
+							</a>
+							<a class="pinterest" href="#">
+								<i class="fab fa-weibo"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end 作者 -->
+
+	<!-- start 社团 -->
+	<div class="py-5" id="blog1" style="background-image: url(images/gao.jpg);">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="w3ls-titles text-center mb-5">
+				<div class="w3ls-titles text-center mb-5">
+					<h3 class="title">社团一览</h3>
+					<span>
+						<i class="fas fa-male"></i>
+					</span>
+					<p class="mt-2">集合了多个社团的网站，内容丰富！</p>
+				</div>
+				<br>
+				<!-- Swiper -->
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/5.jpg" alt=""
+								style="border-radius: 25px; border: 1px solid #bbb;"></div>
+						<div class="swiper-slide"><img src="images/7.jpg" alt=""
+								style="border-radius: 25px; border: 1px solid #bbb;"></div>
+						<div class="swiper-slide"><img src="images/8.jpg" alt=""
+								style="border-radius: 25px; border: 1px solid #bbb;"></div>
+						<div class="swiper-slide"><img src="images/6.jpg" alt=""
+								style="border-radius: 25px; border: 1px solid #bbb;"></div>
+						<div class="swiper-slide"><img src="images/4.jpg" alt=""
+								style="border-radius: 25px; border: 1px solid #bbb;"></div>
+						<div class="swiper-slide"><img src="images/2.jpg" alt=""
+								style="border-radius: 25px; border: 1px solid #bbb;"></div>
+					</div>
+					<br>
+					<br>
+					<br>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!-- Initialize Swiper -->
+				<script>
+					var swiper = new Swiper(".mySwiper", {
+						slidesPerView: 1,
+						spaceBetween: 10,
+						autoplay: true,
+						pagination: {
+							el: ".swiper-pagination",
+							clickable: true,
+						},
+						breakpoints: {
+							"@0.00": {
+								slidesPerView: 1,
+								spaceBetween: 10,
+							},
+							"@0.75": {
+								slidesPerView: 2,
+								spaceBetween: 20,
+							},
+							"@1.00": {
+								slidesPerView: 3,
+								spaceBetween: 40,
+							},
+							"@1.50": {
+								slidesPerView: 4,
+								spaceBetween: 50,
+							},
+						},
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	<!-- end 社团 -->
+
+	<!-- start 打印 -->
+	<div class="blog-w3ls py-5" id="blog2">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="w3ls-titles text-center mb-5">
+				<h3 class="title text-black">打印服务</h3>
+				<span>
+					<i class="fas fa-thumbs-up text-black" style="color: black;"></i>
+				</span>
+				<p class="mt-2 text-black" style="color: black;">学生自主的“打印大业” 制作放置宿舍的云端打印机。</p>
+			</div>
+			<div class="row package-grids mt-5">
+				<div class="col-md-4 pricing">
+					<div class="price-top">
+						<a href="print.html">
+							<img src="images/dyj1.jpg" alt="" class="img-fluid"
+								style="border-radius: 20px 20px 0px 0px;" />
+						</a>
+					</div>
+					<div class="price-bottom p-4" style="border-radius: 0 0 20px 20px;">
+						<h4 class="text-dark mb-3">男生宿舍目前已经部署6台打印机</h4>
+						<a href="print.html">
+							<i class="fas fa-male mr-2"></i>云端打印机快捷使用</a>
+					</div>
+				</div>
+				<div class="col-md-4 pricing my-md-0 my-5">
+					<div class="price-top" style="border-radius: 0 0 20px 20px;">
+						<a href="print.html">
+							<img src="images/dyj2.jpg" alt="" class="img-fluid"
+								style="border-radius: 20px 20px 0px 0px;" />
+						</a>
+					</div>
+					<div class="price-bottom p-4" style="border-radius: 0 0 20px 20px;">
+						<h4 class="text-dark mb-3">女生宿舍目前已经部署7台打印机</h4>
+						<a href="print.html">
+							<i class="fas fa-female mr-2"></i>扫码上传立即打印</a>
+					</div>
+				</div>
+				<div class="col-md-4 pricing">
+					<div class="price-top">
+						<a href="print.html">
+							<img src="images/dyj3.jpg" alt="" width="500px" class="img-fluid"
+								style="border-radius: 20px 20px 0px 0px;" />
+						</a>
+					</div>
+					<div class="price-bottom p-4" style="border-radius: 0 0 20px 20px;">
+						<h4 class="text-dark mb-3">食堂目前已经部署3台打印机,吃饭的地方就有打印机。</h4>
+						<a href="print.html">
+							<i class="fas fa-building mr-2"></i>在吃饭的地方有打印机</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end 打印 -->
+
+	<!-- start 学校地图 -->
+	<div class="screen-w3ls py-5" id="blog3" style="background-image: url(images/gao2.jpg);">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="w3ls-titles text-center mb-5">
+				<h3 class="title">学校地图</h3>
+				<span>
+					<i class="fas fa fa-map"></i>
+				</span>
+				<p class="mt-2">我们网站提供了学校规划的2D地图以及高德地图API提供的3D的地图</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 w3ls-wthree-screen text-center">
+					<img src="images/b5.png" alt="" id="hhh" class="img-fluid">
+				</div>
+				<div class="col-lg-6 w3ls-wthree-texts mt-5">
+					<div class="row icons-screen">
+						<div class="col-3 screen-agile text-right">
+							<i class="fas fa-square" id="hhh"></i>
+						</div>
+						<div class="col-9 screen-agile-2">
+							<h5 class="mb-3"><a href="2d.html" target="_blank" style="color: #000;">2D 学校规划地图</a></h5>
+							<p>学校最精准的 2D 地图，也是一个规划地图，很多未完工的建筑在上面都能找到</p>
+						</div>
+					</div>
+					<div class="row icons-screen mt-5">
+						<div class="col-3 screen-agile text-right">
+							<i class="fab fa-bandcamp" id="hhh"></i>
+						</div>
+						<div class="col-9 screen-agile-2">
+							<h5 class="mb-3"> <a href="3d.html" target="_blank" style="color: #000;">3D 高德地图API地图</a>
+							</h5>
+							<p>更直观的地图呈现，3D 给你更好的体验，清楚知道</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end 学校地图 -->
+
+	<div class="clearfix"></div>
+
+	<!-- start 安全教育 -->
+	<div id="blog" class="banner-bottom py-5">
+		<div class="d-flex container py-xl-3 py-lg-3" id="hhh" style="border-radius: 20px;">
+			<div class="banner-left-bottom-w3ls offset-lg-2 offset-md-1">
+				<h6 class="text-white">“安全教育主页”</h6>
+				<h3 class="text-white my-3">校园微电影作品</h3>
+				<p>来看看优秀作品吧！</p>
+			</div>
+			<div class="button">
+				<a href="movies.html" class="w3ls-button-agile" style="border-radius: 20px;">立马瞧瞧
+					<i class="fas fa-hand-point-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- end 安全教育 -->
+
+	<!-- start 你好科师 -->
+	<div class="screen-w3ls py-5" id="blog4" style="background-color: #4575bd;">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="w3ls-titles text-center mb-5">
+				<h3 class="title"> 你好 科师 </h3>
+				<span>
+					<i class="fas fa fa-star"></i>
+				</span>
+				<p class="mt-2">一起欣赏广西科技师范学院的宣传片</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 w3ls-wthree-screen text-center">
+					<video src="https://gxkjsfxyfw.oss-cn-guangzhou.aliyuncs.com/university.mp4" controls muted
+						controls="controls" loop="loop" class="img-fluid"
+						style="border-radius: 20px;box-shadow:2px 5px 30px rgba(68, 68, 68,0.6);"></video>
+					<!-- <video src="images/university.mp4" controls muted controls="controls" loop="loop" class="img-fluid"
+						style="border-radius: 20px;box-shadow:2px 5px 30px rgba(68, 68, 68,0.6);"></video> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end 你好科师 -->
+
+	<!-- start footer -->
+	<footer>
+		<div class="w3ls-footer-grids pt-sm-4 pt-3">
+			<div class="container py-xl-5 py-lg-3">
+				<div class="row">
+					<div class="col-md-4 w3l-footer">
+						<h2 class="mb-sm-3 mb-2">
+							<a href="index.html" class="text-white font-weight-bold">
+								<span>番外</span>简介
+							</a>
+						</h2>
+						<p>
+							一个融合校园文化以及校园服务的网站，主要内容是收录并介绍学校社团，帮助学校宣传发展社团文化的网站。次要收录学生自制云打印服务，便利学生的打印支持学生自创打印；展示校园地图，包括规划2D地图以及Web3D地图；校园微电影板块，宣传校园正能量，输出正确文化价值观。网站旨在便利学生的校园体验，帮助学校发展校园文化。
+						</p>
+					</div>
+					<div class="col-md-4 w3l-footer my-md-0 my-4">
+						<h3 class="mb-sm-3 mb-2 text-white">联系方式</h3>
+						<ul class="list-unstyled">
+							<li>
+								<i class="fas fa-location-arrow float-left"></i>
+								<p class="ml-4">来宾校区（主校区）来宾市铁北大道966号
+									<span></span>
+								</p>
+								<div class="clearfix"></div>
+							</li>
+							<li class="my-3">
+								<i class="fas fa-phone float-left"></i>
+								<p class="ml-4">电话:18878791474</p>
+								<div class="clearfix"></div>
+							</li>
+							<li>
+								<i class="fas fa-location-arrow float-left"></i>
+								<p class="ml-4">柳州校区（分校区）柳州市柳北区沙塘镇君武路170号
+									<span></span>
+								</p>
+								<div class="clearfix"></div>
+							</li>
+							<li class="my-3">
+								<i class="fas fa-phone float-left"></i>
+								<p class="ml-4">电话：18176684242</p>
+								<div class="clearfix"></div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 w3l-footer">
+						<h3 class="mb-sm-3 mb-2 text-white">快速通道</h3>
+						<div class="nav-w3-l">
+							<ul class="list-unstyled">
+								<li>
+									<a href="http://zjy.gxstnu.edu.cn/" target="_blank">职业技术教育学院</a>
+								</li>
+								<li class="mt-2">
+									<a href="http://sjy.gxstnu.edu.cn/" target="_blank">数学与计算机科学学院</a>
+								</li>
+								<li class="mt-2">
+									<a href="http://jdy.gxstnu.edu.cn/" target="_blank">机械与电器工程学院</a>
+								</li>
+								<li class="mt-2">
+									<a href="http://ysy.gxstnu.edu.cn/" target="_blank">美术与设计学院</a>
+								</li>
+								<li class="mt-2">
+									<a href="http://yywd.gxstnu.edu.cn/" target="_blank">音乐与舞蹈学院</a>
+								</li>
+								<li class="mt-2">
+									<a href="http://tyy.gxstnu.edu.cn/" target="_blank">体育学院</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="border-top mt-5 pt-lg-4 pt-3 pb-lg-0 pb-3 text-center">
+					<p class="copy-right-grids mt-lg-1">Copyright &copy; 2021.Primitive All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- slider -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: true,
+				speed: 1000,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+	<!-- slider -->
+	<script src="js/fixed-nav.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/medic.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
